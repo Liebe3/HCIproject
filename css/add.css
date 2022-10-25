@@ -1,0 +1,251 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Poppins;
+  background-color: #7FB5FF;
+  position: relative;
+
+}
+
+nav {
+  background: #FFD384;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  
+}
+nav .mainMenu li{
+  margin-top: 10px;
+  
+}
+nav .mainMenu li a {
+  display: inline-block;
+  border: 2px solid white;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+  
+}
+nav .mainMenu li a:hover {
+  background: #7FB5FF;
+}
+
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icons a i{
+  color: white;
+}
+.fa-facebook:hover {
+  color: blue
+}
+.fa-instagram:hover {
+  color: #FF884B
+}
+.fa-tiktok:hover {
+  color: blue
+}
+.fa-envelope:hover {
+  color: #FF884B
+}
+nav{
+  margin: 10px;
+}
+nav .logo {
+  margin-left: 30px;
+  cursor: pointer;
+  animation-name: logo;
+  animation-timing-function: 3s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  25%{
+    color: #FF884B
+  }
+  50%{
+    color: #7FB5FF;
+  }
+}
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFD384;
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    background-color: #7FB5FF;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+div .equation {
+  background-color: white;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 1px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.equation h1{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width:360px) and (max-width: 667px ){
+  .equation h1{
+    font-size: 70px;
+  }
+}
+
+.row{
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.row div{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.option1{
+  background-color: #FFD384;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: #FF884B;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.option1:hover{
+  background-color: #FF884B;
+  color: #FFD384;
+}
+
+.option2{
+  background-color: #FFD384;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: #FF884B;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.option2:hover{
+  background-color: #FF884B;
+  color: #FFD384;
+}
+
+.option3{
+  background-color: #FFD384;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: #FF884B;
+  transition: 0.15s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.option3:hover{
+  background-color: #FF884B;
+  color: #FFD384;
+}
+
+
+
+.icons2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  left: 0;
+  right: 0;
+  bottom: -100px;
+  
+}
+
+.icons2 a i{
+  margin: 10px;
+  color: white;
+}
+
+
+.icons2 i:hover{
+  transition: 0.5s;
+  
+}
+
+@media (max-width:800px){
+  .icons2 i{
+    visibility: hidden;
+  }
+}
+
